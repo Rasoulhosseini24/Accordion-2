@@ -1,0 +1,149 @@
+/* For mobile phones: */
+[class*="coll-"] {
+  width: 100%;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .coll-s-1 {width: 8.33%;}
+  .coll-s-2 {width: 16.66%;}
+  .coll-s-3 {width: 25%;}
+  .coll-s-4 {width: 33.33%;}
+  .coll-s-5 {width: 41.66%;}
+  .coll-s-6 {width: 50%;}
+  .coll-s-7 {width: 58.33%;}
+  .coll-s-8 {width: 66.66%;}
+  .coll-s-9 {width: 75%;}
+  .coll-s-10 {width: 83.33%;}
+  .coll-s-11 {width: 91.66%;}
+  .coll-s-12 {width: 100%;}
+
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .coll-1 {width: 8.33%;}
+  .coll-2 {width: 16.66%;}
+  .coll-3 {width: 25%;}
+  .coll-4 {width: 33.33%;}
+  .coll-5 {width: 41.66%;}
+  .coll-6 {width: 50%;}
+  .coll-7 {width: 58.33%;}
+  .coll-8 {width: 66.66%;}
+  .coll-9 {width: 75%;}
+  .coll-10 {width: 83.33%;}
+  .coll-11 {width: 91.66%;}
+  .coll-12 {width: 100%;}
+}
+
+
+
+
+*{
+box-sizing: border-box;
+margin: 0%;
+padding: 0%;
+}
+
+
+body{
+display: flex;
+align-items: center;
+justify-content: center;
+background:linear-gradient(purple, rgb(45, 45, 158),purple,rgb(45, 45, 158),purple);
+}
+
+
+.containerr{
+display: flex;
+max-width: 1440px;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+
+}
+
+
+.containerr .roww{
+display: flex;
+width: 100%;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.sec{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+}
+
+.acc> div>span{
+background-color: rgb(255, 255, 255);
+display: block;
+width: 100%;
+padding: 15px;
+cursor: pointer;
+border-bottom: 2px solid green;
+text-transform: capitalize;
+font-family: sans-serif;
+font-weight: bold;
+}
+
+
+.acc> div:first-child>span{
+border-top-right-radius: 5px;
+border-top-left-radius: 5px;
+
+}
+
+.acc> div:last-child>span{
+border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;
+border-bottom: 0;
+}
+
+.acc> div.show:last-child>span{
+border-radius: 0;
+
+}
+.acc> div.show:last-child>div{
+border-bottom: 2px solid green;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+
+}
+
+.acc>div>span:after{
+content: '\002b';
+float: right;
+}
+
+.acc>div.show>span:after{
+content: "\2212";
+}
+
+
+.acc > div.show>span:hover,.acc>div.show>span{
+background-color: rgb(173, 173, 173);
+}
+
+.acc > div > div{
+padding: 0 15px;
+border-left: 2px solid green;
+border-right: 2px solid green;
+max-height: 0;
+overflow: hidden;
+transition: all 600ms ease;
+font-family:  sans-serif;
+font-size: 16px;
+background-color: rgba(255, 255, 255, 0.719);
+}
+
+
+.acc >div.show > div{
+padding: 15px;
+}
+
